@@ -49,7 +49,7 @@
         if (!address) {
           continue
         }
-        const url = `https://mainnet-indexer.optimism.io/v1/airdrops/${address}`
+        const url = `https://rest.bd.evmos.org:1317/evmos/claims/v1/claims_records/${address}`
         const res = await fetch(url)
         const json = await res.json()
         if (res.status === 200) {

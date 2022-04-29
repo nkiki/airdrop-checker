@@ -1,3 +1,0 @@
-# evmos-airdrop-checker
-
-test

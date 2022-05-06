@@ -1,3 +1,3 @@
-# evmos-airdrop-checker
+airdrop-checker
 
 test

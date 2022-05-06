@@ -18,7 +18,7 @@
 </head>
 <body>
   <h2>
-    Check evmos Airdrop
+    Check  Airdrop
   </h2>
   <label>List of addresses</label>
   <textarea id="input" placeholder="0x123..."></textarea>
@@ -54,15 +54,15 @@
         const json = await res.json()
         if (res.status === 200) {
           console.log(json)
-          const amount = BigInt(json.totalAmount) / (BigInt(10) ** BigInt(18))
+          const amount = BigInt(json.totalTokens) / (BigInt(10) ** BigInt(18))
           total += amount
-          output.push(`${address} ${amount.toString()} OP`)
+          output.push(`${address} ${amount.toString()} token`)
         } else {
           output.push(`${address} 0`)
         }
         $output.innerHTML = output.join('<br/>')
       }
-      output.push(`total ${total.toString()} evmos`)
+      output.push(`total ${total.toString()} token`)
       $output.innerHTML = output.join('<br/>')
     }
   </script>

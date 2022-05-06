@@ -49,7 +49,7 @@
         if (!address) {
           continue
         }
-        const url = `https://rest.bd.evmos.org:1317/evmos/claims/v1/claims_records/${address}`
+        const url = `https://airdrop-api.hop.exchange/v1/airdrop/${address}`
         const res = await fetch(url)
         const json = await res.json()
         if (res.status === 200) {
